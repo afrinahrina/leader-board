@@ -69,7 +69,7 @@ header {
 .header-menu a {
     text-decoration: none;
     color: white;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 
@@ -182,4 +182,66 @@ header {
     padding: 3px;
     border-radius: 15px;
     margin-left: 15px;
+}
+
+/* ===============media quearies============== */
+
+
+
+/* ==============mobile devices================ */
+
+
+@media only screen and (max-width:688px) {
+    header {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs {
+        flex-direction: column;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
+
+
+/* ================tablet devices============== */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    header {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs {
+        flex-direction: column;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .courses {
+        grid-row-gap: 30px;
+    }
+
 }
