@@ -199,6 +199,7 @@ header {
     .header-contents {
         width: 90%;
         font-size: 14px;
+        background-color: #ED6B4F;
     }
 
     .container {
